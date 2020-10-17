@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/app_violet</item>
+        <item name="colorOnPrimary">@color/md_white_1000</item>
+        <item name="colorPrimaryVariant">@color/app_light_violet</item>
+
+        <item name="colorSecondary">@color/app_red</item>
+        <item name="colorOnSecondary">@color/md_white_1000</item>
+        <item name="colorSecondaryVariant">@color/app_dark_red</item>
+
+        <item name="colorPrimaryDark">@color/app_grey</item>
+        <item name="colorAccent">@color/app_blue</item>
+
+        <item name="android:fontFamily">@font/hobostd</item>
+<!--        <item name="android:colorBackground">@android:color/transparent</item>-->
+    </style>
+
+
+
+</resources>

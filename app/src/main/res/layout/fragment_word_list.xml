@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/view_background_blue">
+
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/chooses_a_word_in_00_30"
+        android:textColor="@color/app_grey"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/option1"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded_white_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timerText">
+
+        <RadioButton
+            android:id="@+id/optionButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/app_grey"
+            android:checked="true"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/optionText1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/app_violet"
+            android:textSize="20sp"
+            tools:text="Helicopter" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/option2"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded_white_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/option1">
+
+        <RadioButton
+            android:id="@+id/optionButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/app_grey"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/optionText2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/app_violet"
+            android:textSize="20sp"
+            tools:text="Helicopter" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/option3"
+
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded_white_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/option2">
+
+        <RadioButton
+            android:id="@+id/optionButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/app_grey"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/optionText3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/app_violet"
+            android:textSize="20sp"
+            tools:text="Helicopter" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/option4"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded_white_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/option3">
+
+        <RadioButton
+            android:id="@+id/optionButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/app_grey"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/optionEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:layout_weight="1"
+            android:maxLength="10"
+            android:backgroundTint="@color/app_violet"
+            android:gravity="center"
+            android:hint="@string/enter_word"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textColor="@color/app_blue"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/submitButton"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded_white_background"
+        android:gravity="center"
+        android:paddingStart="32dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="32dp"
+        android:paddingBottom="16dp"
+        android:text="SUBMIT"
+        android:textColor="@color/app_red"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/option4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

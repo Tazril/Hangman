@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main"
+    app:startDestination="@id/lobbyFragment">
+
+    <fragment
+        android:id="@+id/playOtherFragment"
+        android:name="com.taz.hangman.fragment.PlayOtherFragment"
+        android:label="PlayOtherFragment" >
+        <action
+            android:id="@+id/action_playOtherFragment_to_waitRoomFragment"
+            app:destination="@id/waitRoomFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/playMineFragment"
+        android:name="com.taz.hangman.fragment.PlayMineFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" >
+        <action
+            android:id="@+id/action_playMineFragment_to_waitRoomFragment"
+            app:destination="@id/waitRoomFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.taz.hangman.fragment.ResultFragment"
+        android:label="ResultFragment" >
+        <action
+            android:id="@+id/action_resultFragment_to_lobbyFragment"
+            app:destination="@id/lobbyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lobbyFragment"
+        android:name="com.taz.hangman.fragment.LobbyFragment"
+        android:label="LobbyFragment" >
+        <action app:popUpToInclusive="true"
+            android:id="@+id/action_lobbyFragment_to_waitRoomFragment"
+            app:destination="@id/waitRoomFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/waitRoomFragment"
+        android:name="com.taz.hangman.fragment.WaitRoomFragment"
+        android:label="WaitRoomFragment" >
+        <action app:popUpToInclusive="true"
+            android:id="@+id/action_waitRoomFragment_to_playMineFragment"
+            app:destination="@id/playMineFragment" />
+        <action app:popUpToInclusive="true"
+            android:id="@+id/action_waitRoomFragment_to_playOtherFragment"
+            app:destination="@id/playOtherFragment" />
+        <action
+            android:id="@+id/action_waitRoomFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+</navigation>

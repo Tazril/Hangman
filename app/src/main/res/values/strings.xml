@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Hangman</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="don_t_hang_the_man">Don\'t hang the man..</string>
+    <string name="your_knowledge_for_words_count">your knowledge for words count</string>
+    <string name="developed_by_tazril">developed by Tazril</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="join">JOIN</string>
+    <string name="create">CREATE</string>
+    <string name="capacity">Capacity</string>
+    <string name="enter_code">Enter Code</string>
+    <string name="hangman">HANGMAN</string>
+    <string name="hints_given">Hints Given</string>
+    <string name="guess_the_word_in_00_00">Guess the word in %1$d s</string>
+    <string name="missing">o missing…</string>
+    <string name="you_have_selected">You have selected</string>
+    <string name="play_hangman">Play Hangman</string>
+    <string name="enter_word">Enter Word</string>
+
+    <string name="sample_desc">This is a description of the group Hello , you understand right. OK then, cool. Hope you are…</string>
+    <string name="sample_short_desc">Created 6 months ago by Mango Man</string>
+    <string name="sample_name">Fresher Collections</string>
+    <string name="sample_duration">joined 3 days ago</string>
+    <string name="chooses_a_word_in_00_30">----- Chooses a Word in %1$d s ----</string>
+    <string name="game_ends_in">Game Ends in %1$d s</string>
+    <string name="choice_ends_in">Choice Ends in %1$d s</string>
+    <string name="hint_count_text">%1$d/3</string>
+    <string name="restart">%1$s Restart %2$d/%3$d</string>
+    <string name="start">%1$s Ready %2$d/%3$d</string>
+    <string name="choosing_a_word">%1$s is choosing a word</string>
+    <string name="game_code">Game Code: %1$d </string>
+    <string name="share">share</string>
+    <string name="players_joined">Players Joined: %1$d/%2$d</string>
+    <string name="score_points">%1$d \npoints</string>
+    <string name="score_points_increment">+ %1$d</string>
+    <string name="members">---------------- Members --------------</string>
+    <string name="about_desc_1">Concept, design and developed \nby Tazril</string>
+    <string name="about_desc_2">Sound: freesound.org \n \n Tutorial Illustrations: undraw.co</string>
+    <string name="connected_desc_1">Chat with others on the right by pressing the chat icon</string>
+    <string name="connected_desc_2">Leaderboard is on the left as well players with correct answer are shown here</string>
+    <string name="hint_desc_1">The chooser has to pass all three hints otherwise his/her score would be deducted.</string>
+    <string name="hint_desc_2">The hints should not indicate the letters present in the word rather it should be descriptive about the word</string>
+    <string name="rules_desc_1">A player chooses word out of 3 available options or choose custom word</string>
+    <string name="rules_desc_2">Other Players have to guess the word in 60 seconds within 7 chances</string>
+    <string name="rules">Rules</string>
+    <string name="hints">Hints</string>
+    <string name="connected">Connected</string>
+    <string name="about">About</string>
+    <string name="nav_app_bar_open_drawer_description">Open</string>
+    <string name="nav_app_bar_navigate_up_description">close</string>
+</resources>

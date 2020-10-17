@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardContainer"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/rounded_grey_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/indicatorText"-->
+        <!--                android:layout_width="24dp"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:layout_marginEnd="4dp"-->
+        <!--                android:gravity="center"-->
+        <!--                android:rotation="-90"-->
+        <!--                tools:text="You"-->
+        <!--                android:textColor="@color/app_red"-->
+        <!--                android:textSize="12sp" />-->
+
+        <TextView
+            android:id="@+id/rankText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_black"
+            android:textSize="16sp"
+            tools:text="1." />
+
+        <com.taz.hangman.widgets.AvatarImageView
+            android:id="@+id/avatarImage"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:avCornerRadius="50dp"
+            tools:src="@color/app_red" />
+
+        <TextView
+            android:id="@+id/nameText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/app_black"
+            android:textSize="16sp"
+            tools:text="Tazril Ala Alien" />
+
+        <TextView
+            android:id="@+id/scoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/app_black"
+            android:textSize="16sp"
+            tools:text="@string/score_points" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/app_grey"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/wordStatusLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/wordText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/app_blue"
+            android:textSize="14sp"
+            tools:text="Tazril Ala Alien" />
+
+        <TextView
+            android:id="@+id/scoreIncText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_green"
+            android:textSize="16sp"
+            tools:text="@string/score_points_increment" />
+    </LinearLayout>
+</LinearLayout>
+

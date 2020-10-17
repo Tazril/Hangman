@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_margin="4dp"
+    android:orientation="vertical">
+
+    <com.taz.hangman.widgets.AvatarImageView
+        android:id="@+id/avatarImage"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:src="@color/md_black_1000"
+        app:avCornerRadius="50dp" />
+
+    <TextView
+        android:id="@+id/nameText"
+        android:background="@color/view_background_pink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/app_violet"
+        android:textSize="12sp"
+        android:gravity="center"
+        tools:text="@tools:sample/full_names" />
+
+</LinearLayout>

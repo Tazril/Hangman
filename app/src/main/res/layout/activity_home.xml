@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/red_ruled_bg"
+    tools:context=".activity.HomeActivity">
+
+    <TextView
+        android:id="@+id/text_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/don_t_hang_the_man"
+        android:textColor="@color/app_blue"
+        android:background="@color/view_background_pink"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:background="@color/view_background_pink"
+        android:layout_marginTop="8dp"
+        android:text="@string/your_knowledge_for_words_count"
+        android:textColor="@color/app_red"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_1" />
+
+    <TextView
+        android:id="@+id/text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/developed_by_tazril"
+        android:background="@color/view_background_pink"
+        android:textColor="@color/app_grey"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/text_1"
+        app:layout_constraintTop_toBottomOf="@+id/text_2" />
+
+    <LinearLayout
+        android:id="@+id/create_layout"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:background="@drawable/rounded_white_background"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/join_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="@string/create"
+            android:textSize="28sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/capacity"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/capacityText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                tools:text="10" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/capacitySeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_marginTop="8dp"
+            android:progress="45"
+            android:progressBackgroundTint="@color/app_grey"
+            android:progressDrawable="@drawable/progress_grey_background"
+            android:thumbTint="@color/md_white_1000" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/createButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/triangle_shape"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/create_layout"
+        app:layout_constraintStart_toEndOf="@+id/create_layout"
+        app:layout_constraintTop_toTopOf="@+id/create_layout" />
+
+
+    <LinearLayout
+        android:id="@+id/join_layout"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:background="@drawable/rounded_white_background"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/userNameInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_layout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="center"
+            android:text="@string/join"
+            android:textSize="28sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/codeInput"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/rounded_white_background"
+            android:hint="@string/enter_code"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/codeInputText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/app_black"
+                android:background="@color/view_background_grey"
+                android:inputType="number"
+                android:textSize="12sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/joinedButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/triangle_shape"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/join_layout"
+        app:layout_constraintStart_toEndOf="@+id/join_layout"
+        app:layout_constraintTop_toTopOf="@+id/join_layout" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/userNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_white_background"
+        android:hint="@string/enter_your_name"
+        android:paddingStart="20dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userNameInputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/view_background_grey"
+            android:maxLength="20"
+            android:digits=" abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textSize="20sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
